@@ -1,0 +1,27 @@
+{
+  "name": "cra-template-template-mrlsk8",
+  "version": "1.0.1",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "template",
+    "my-own-react-template"
+  ],
+  "main": "template.json",
+  "description": "A simple react template containing organized folders, private routes, some essential libraries and so on.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MRLSK8/react-template.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
+  "bugs": {
+    "url": "https://github.com/MRLSK8/react-template/issues"
+  },
+  "files": [
+    "template",
+    "template.json"
+  ]
+}
