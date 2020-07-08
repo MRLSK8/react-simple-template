@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const RegularButtons = () => (
   <Container>
-    <Button type="button">Enviar</Button>
+    <Button type='button'>Enviar</Button>
   </Container>
 );
 

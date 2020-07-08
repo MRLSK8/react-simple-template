@@ -9,7 +9,7 @@ export default function StyleGuide() {
     <Container>
       <Row>
         <Square
-          color="none"
+          color='none'
           style={{
             display: 'flex',
             justifyContent: 'center',
@@ -19,7 +19,7 @@ export default function StyleGuide() {
           <Title>Primary</Title>
         </Square>
         <Square
-          color="none"
+          color='none'
           style={{
             display: 'flex',
             justifyContent: 'center',
@@ -29,7 +29,7 @@ export default function StyleGuide() {
           <Title>Secondary</Title>
         </Square>
         <Square
-          color="none"
+          color='none'
           style={{
             display: 'flex',
             justifyContent: 'center',
@@ -39,7 +39,7 @@ export default function StyleGuide() {
           <Title>Accent</Title>
         </Square>
         <Square
-          color="none"
+          color='none'
           style={{
             display: 'flex',
             justifyContent: 'center',
@@ -49,7 +49,7 @@ export default function StyleGuide() {
           <Title>Contrast</Title>
         </Square>
         <Square
-          color="none"
+          color='none'
           style={{
             display: 'flex',
             justifyContent: 'center',
@@ -59,7 +59,7 @@ export default function StyleGuide() {
           <Title>Background</Title>
         </Square>
         <Square
-          color="none"
+          color='none'
           style={{
             display: 'flex',
             justifyContent: 'center',

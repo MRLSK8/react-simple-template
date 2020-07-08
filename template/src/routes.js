@@ -6,7 +6,7 @@ import { SWRConfig } from 'swr';
 
 import StyleGuide from './components/StyleGuide';
 import { fetcher } from './services/api';
-import * as auth from './services/auth';
+import { isAuthenticated } from './services/auth';
 
 import Detail from './pages/Detail';
 import Login from './pages/Login';
@@ -17,7 +17,7 @@ const PrivateRoute = ({ component: Component, ...args }) => (
     <Route
       {...args}
       render={(props) =>
-        auth.isAuthenticated() ? (
+        isAuthenticated() ? (
           <Component {...props} />
         ) : (
           <Redirect
@@ -30,18 +30,18 @@ const PrivateRoute = ({ component: Component, ...args }) => (
 );
 
 PrivateRoute.propTypes = {
-  component: PropTypes.objectOf(PropTypes.elementType).isRequired,
-  location: PropTypes.objectOf().isRequired,
+  component: PropTypes.elementType,
+  location: PropTypes.object,
 };
 
 const Routes = () => (
   <Switch>
-    <Route path="/login" component={Login} />
-    <PrivateRoute path="/main" component={Main} />
-    <Route path="/detail" component={Detail} />
-    <Route path="/styleguide" component={StyleGuide} />
+    <Route path='/login' component={Login} />
+    <PrivateRoute path='/main' component={Main} />
+    <PrivateRoute path='/detail' component={Detail} />
+    <PrivateRoute path='/styleguide' component={StyleGuide} />
 
-    <Redirect from="*" to="/login" />
+    <Redirect from='*' to='/login' />
   </Switch>
 );
 
